@@ -16,34 +16,38 @@
 -INSTALATION
 
 You should have installed Python3 and Postgress on your system.
-------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  Clone the repository: git clone https://github.com/yourusername/zeply.git
-------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  Install the dependencies: pip/pip3 install -r requirements.txt
-------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  Migrate the database: python manage.py migrate
-------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 -RUNNING
-
+ Start your Postgress server: brew services start postgresql@13
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  Start the development server: python/python3 manage.py runserver
-------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  Send a POST request with cryptocurrency parameter set to either BTC or ETH:
  curl -X POST -H "Content-Type: application/json" -d '{"cryptocurrency":"BTC"}' http://localhost:8000/api/generate_address/
- ------------------------------------------------------------
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  You should receive a JSON response with a new cryptocurrency address:
- <img width="585" alt="Screen Shot 2023-04-14 at 1 34 01 AM" src="https://user-images.githubusercontent.com/102044657/231897599-d775e089-e76d-49ca-a1e3-8105355930c0.png">
  {
     "id": 1,
     "cryptocurrency": "BTC",
     "address": "mo9xBiLdb94L7wvXZfpDRT6E4qatqoAncw"
 }
--------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+To see list of addresses, go to http://localhost:8000/api/list_address/
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 To retrieve a specific address, go to http://localhost:8000/api/retrieve_address/<id>/, where <id> is the ID of the address you want to retrieve.
--------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 -TESTING
 To run the unit tests, simply run: python manage.py test
--------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-SCREENSHOTS
 
