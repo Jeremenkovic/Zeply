@@ -50,7 +50,9 @@ To run the unit tests, simply run: python manage.py test
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 -SCREENSHOTS
-<img width="1440" alt="Screen Shot 2023-04-14 at 1 58 30 AM" src="https://user-images.githubusercontent.com/102044657/231900883-106f8f96-1c1b-4bbf-857b-bd4a3a0e989f.png">
-<img width="1440" alt="Screen Shot 2023-04-14 at 1 58 49 AM" src="https://user-images.githubusercontent.com/102044657/231900894-89f0b37a-dff4-48b9-a380-646f1bc328c9.png">
+<img width="1440" alt="Screen Shot 2023-04-14 at 12 38 20 PM" src="https://user-images.githubusercontent.com/102044657/232008657-b6a512d2-a49a-4b01-a0ba-7fcc2c0137c6.png">
+
+<img width="1440" alt="Screen Shot 2023-04-14 at 12 38 46 PM" src="https://user-images.githubusercontent.com/102044657/232008702-7ea95e9e-f9c2-44c8-9b2a-14c43d0ecdbc.png">
+
 <img width="1440" alt="Screen Shot 2023-04-14 at 1 59 04 AM" src="https://user-images.githubusercontent.com/102044657/231900908-85b6488d-63c1-46e2-a42e-ae524d61c52a.png">
 
