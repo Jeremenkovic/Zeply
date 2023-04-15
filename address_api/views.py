@@ -1,4 +1,5 @@
 from typing import KeysView
+import os
 from rest_framework import generics, status
 from eth_account import Account
 from requests import Response
@@ -12,13 +13,17 @@ from stellar_sdk import Keypair as XLMKeypair
 from cryptography.fernet import Fernet
 from django.shortcuts import get_object_or_404
 
+FERNET_KEY = os.environ.get('FERNET_KEY')
+if FERNET_KEY is None:
+    raise ValueError("Fernet key not found in environment variables")
+
+cipher_suite = Fernet(FERNET_KEY)
+
 def encrypt_key(key: str) -> str:
-    cipher_suite = Fernet(Fernet.generate_key())
     cipher_text = cipher_suite.encrypt(key.encode())
     return cipher_text.decode()
 
 def decrypt_key(encrypted_key: str) -> str:
-    cipher_suite = Fernet(Fernet.generate_key())
     plain_text = cipher_suite.decrypt(encrypted_key.encode())
     return plain_text.decode()
 

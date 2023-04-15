@@ -4,7 +4,6 @@ class CryptoAddress(models.Model):
     CRYPTO_CHOICES = (
         ('BTC', 'Bitcoin'),
         ('ETH', 'Ethereum'),
-        ('LTC', 'Litecoin'),
         ('BCH', 'Bitcoin Cash'),
         ('XRP', 'Ripple'),
         ('XLM', 'Stellar'),
