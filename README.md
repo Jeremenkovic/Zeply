@@ -49,7 +49,7 @@ To retrieve a specific address, go to http://localhost:8000/api/retrieve_address
 
 -TESTING
 
-To run the unit tests, simply run: python3 manage.py test or  python3 manage.py test_api_requests
+To run the unit tests, simply run: python3 manage.py test
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 -SCREENSHOTS
