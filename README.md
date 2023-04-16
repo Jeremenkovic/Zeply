@@ -3,13 +3,17 @@
 -DESRIPTION
 
  The Crypto Address Generator project is a web application that allows users to generate unique cryptocurrency addresses and multiple currencies per one user for Bitcoin (BTC), Ethereum (ETH) and BitcoinCash (BCH).
+ 
  The application is built with Django and Postgress as database that is encrypted with FERNET_KEY, see fernet.py and .env file in the repo for more details PLEASE. Encryption is done in address_api/views.py.
+ 
  The API endpoints are exposed using Django REST framework.
  The CryptoAddressSerializer defines the serialization and deserialization behavior of the model, while the views define the API endpoints.
  The GenerateAddressView is responsible for generating new crypto addresses. When a new address is generated, it is saved to the database along with its corresponding cryptocurrency type.
+ 
  The ListAddressView simply lists all the addresses that have been generated so far.
  Finally, the RetrieveAddressView retrieves the details of a single crypto address by its ID.
  To use the application, a user NEEDS to make a POST request to the generate_address endpoint with the desired cryptocurrency type in the request body, if you dont specify account user, it will be set 0 as default.
+ 
  The API will then generate a new address and encrypted private key and return it as a response. The list_addresses endpoint can be used to retrieve a list of all generated addresses, while the retrieve_address endpoint can be used to retrieve the details of a single address by its ID.
 
 -INSTALATION
